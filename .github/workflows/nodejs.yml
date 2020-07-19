@@ -23,12 +23,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      #      - name: Setup kernel for react native, increase watchers
-      #        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+      - name: Setup kernel for react native, increase watchers
+        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - run: yarn run lint
       - run: yarn run test --runInBand --no-cache
+      - name: Setup kernel for react native, increase watchers
+        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
       - run: yarn deploy
         env:
           CI: true
+          CHOKIDAR_USEPOLLING: 1
