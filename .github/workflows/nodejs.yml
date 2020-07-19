@@ -6,8 +6,8 @@ name: Node.js CI
 on:
   push:
     branches: [dev]
-  pull_request:
-    branches: [dev]
+#  pull_request:
+#    branches: [dev]
 
 jobs:
   build:
@@ -27,5 +27,6 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn run lint
       - run: yarn run test --runInBand --no-cache
+      - run: yarn deploy
         env:
           CI: true
