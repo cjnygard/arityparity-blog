@@ -16,7 +16,7 @@ socialImage: '/media/software-development-media.jpg'
 # Birth of a Cliche
 
 We’ve all heard the phrase “Shift Left” applied to just about everything in our business, from security testing to ordering lunch.
-You may share my perception that it's become a bit of a cliche, that people believe "Shift left is a 'good idea' because it's more expensive to fix things after they're in production" is obviously self-evident.
+You may share my perception that it's become a bit of a cliche, that people regard "Shift left is a 'good idea' because it's more expensive to fix things after they're in production" as obviously self-evident.
 But we lack any real understanding of the underlying process dynamics, and consequently fail to apply concerted effort to implement these ideas beyond buzz-wordy lip-service in hiring adverts.
 
 In what follows, I hope you take away a fundamental understanding of why you should devote serious attention, engineering resources, and product management practices to your software production pipeline as a critical value-stream within your business.
