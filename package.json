@@ -69,6 +69,7 @@
     "gatsby-source-filesystem": "^2.3.19",
     "gatsby-transformer-remark": "^2.8.25",
     "gatsby-transformer-sharp": "^2.5.11",
+    "gradeful-fs": "^4.2.4",
     "invariant": "^2.2.4",
     "katex": "^0.12.0",
     "lodash": "^4.17.19",
