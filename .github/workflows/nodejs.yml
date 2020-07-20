@@ -30,8 +30,8 @@ jobs:
       - run: yarn run lint
       - run: yarn run test --runInBand --no-cache
       - name: Setup kernel for react native, increase watchers
-        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-      - run: yarn deploy
+        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p && cat /etc/sysctl.conf
+      - run: 'cat /etc/sysctl.conf && echo "chok: $CHOKIDAR_USEPOLLING" && yarn deploy'
         env:
           CI: true
-          CHOKIDAR_USEPOLLING: 1
+          CHOKIDAR_USEPOLLING: true
