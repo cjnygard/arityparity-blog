@@ -1,13 +1,17 @@
 ---
-title: "About me"
-template: "page"
-socialImage: "/media/image-2.jpg"
+title: 'About the author'
+template: 'page'
+socialImage: '/media/software-development-media.png'
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+#### Technology Leader | Consultant | Architect | Developer | Engineer
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I am a senior technology leader who self-identifies as a software engineer and architect.
+I have 15+ years experience delivering mission-critical software systems to Fortune 10 and Governmental institutions in hands-on Software Engineer, Architect and Director-level management roles.
+I am comfortable driving high-level strategic decisions and have the technical experience to understand how tactical decisions will affect the overall long-term strategic goals.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Someone I greatly respect once said that software is the medium within which their artistic creativity is expressed.
+It is that expression of creativity that I seek out in the work that I do.
+I mentor and motivate teams to achieve their own creativity in the software and solutions they deliver to meet their users’ needs and expectations.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+I love solving problems and making things a little better every day.
