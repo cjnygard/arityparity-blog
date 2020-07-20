@@ -247,13 +247,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/site/config`,
-        name: 'config'
-      }
-    }
+    'gatsby-plugin-optimize-svgs'
   ]
 };
