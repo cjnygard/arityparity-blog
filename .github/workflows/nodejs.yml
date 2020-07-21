@@ -36,3 +36,4 @@ jobs:
         env:
           CI: true
           CHOKIDAR_USEPOLLING: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
