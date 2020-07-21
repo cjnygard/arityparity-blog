@@ -32,7 +32,7 @@ jobs:
       - run: git config --global user.email cjnygard@gmail.com && git config --global user.name "github-actions"
       - name: Setup kernel for react native, increase watchers
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p && cat /etc/sysctl.conf
-      - run: 'cat /etc/sysctl.conf && echo "chok: $CHOKIDAR_USEPOLLING" && yarn deploy'
+      - run: 'cat /etc/sysctl.conf && echo "chok: $CHOKIDAR_USEPOLLING" && yarn ghdeploy'
         env:
           CI: true
           CHOKIDAR_USEPOLLING: true
