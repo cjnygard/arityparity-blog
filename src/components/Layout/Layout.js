@@ -10,7 +10,7 @@ type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage? :string
+  socialImage?: string
 };
 
 const Layout = ({
@@ -28,6 +28,7 @@ const Layout = ({
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
+        <script data-ad-client="ca-pub-7459255974579688" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <meta name="description" content={description} />
         <meta property="og:site_name" content={title} />
         <meta property="og:image" content={metaImageUrl} />
