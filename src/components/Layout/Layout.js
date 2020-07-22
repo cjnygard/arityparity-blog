@@ -29,6 +29,16 @@ const Layout = ({
         <html lang="en" />
         <title>{title}</title>
         <script data-ad-client="ca-pub-7459255974579688" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-7459255974579688",
+              enable_page_level_ads: true
+            });
+            `,
+          }}
+        />
         <meta name="description" content={description} />
         <meta property="og:site_name" content={title} />
         <meta property="og:image" content={metaImageUrl} />
