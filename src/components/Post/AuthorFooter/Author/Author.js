@@ -2,6 +2,7 @@
 import React from 'react';
 import { withPrefix, Link } from 'gatsby';
 import styles from './Author.module.scss';
+import kebabCase from 'lodash/kebabCase';
 
 type Props = {
   author: {
@@ -13,32 +14,29 @@ type Props = {
 };
 
 const Author = ({ author, isIndex }: Props) => (
-  <div className={styles['author']}>
-    <div className={styles['author__avatar']}>
-      <Link to="/">
+  <ul className={styles['author']}>
+    <li>
+      <div className={styles['author__headshot']}>
         <img
           src={withPrefix(author.photo)}
-          className={styles['author__photo']}
+          className={styles['author__headshot_photo']}
           width="75"
           height="75"
           alt={author.name}
         />
-      </Link>
-    </div>
-
-    <div className={styles['author__identity']}>
-      {isIndex === true ? (
-        <h1 className={styles['author__title']}>
-          <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-        </h1>
-      ) : (
-          <h2 className={styles['author__title']}>
-            <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-          </h2>
-        )}
-      <p className={styles['author__subtitle']}>{author.bio}</p>
-    </div>
-  </div>
+      </div>
+    </li>
+    <li>
+      <div className={styles['author__name']} height="75">
+        <Link to={`/pages/${kebabCase(author.bio)}/`}
+          className={styles['author__name-link']}
+          activeClassName={styles['author__name-link--active']}
+        >
+          {author.name}
+        </Link>
+      </div>
+    </li>
+  </ul>
 );
 
 export default Author;
