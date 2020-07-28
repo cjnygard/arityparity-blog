@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Author renders correctly 1`] = `
+exports[`AuthorFooter renders correctly 1`] = `
 <div
-  className="author"
+  className="authorfooter"
 >
   <p
-    className="author__bio"
+    className="authorfooter__bio"
   >
     Test bio
     <a
-      className="author__bio-twitter"
+      className="authorfooter__bio-twitter"
       href="https://www.twitter.com/#"
       rel="noopener noreferrer"
       target="_blank"

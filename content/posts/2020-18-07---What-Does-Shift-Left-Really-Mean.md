@@ -11,6 +11,7 @@ tags:
   - 'Software Development'
 description: 'It’s really about how much confidence you have in your code. The earlier you can gain confidence that your code change is correct, the faster you can deliver.'
 socialImage: '/media/software-development-media.jpg'
+author: cjnygard
 ---
 
 # Birth of a Cliche

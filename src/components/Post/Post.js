@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import Author from './Author';
+import AuthorFooter from './AuthorFooter';
 import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
@@ -16,7 +16,7 @@ type Props = {
 const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date } = post.frontmatter;
+  const { tags, title, date, author } = post.frontmatter;
 
   return (
     <div className={styles['post']}>
@@ -29,7 +29,7 @@ const Post = ({ post }: Props) => {
       <div className={styles['post__footer']}>
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-        <Author />
+        <AuthorFooter author={author} />
       </div>
 
       <div className={styles['post__comments']}>

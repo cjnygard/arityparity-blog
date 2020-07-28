@@ -4,13 +4,14 @@ date: '2017-11-16T22:12:03.284Z'
 template: 'post'
 draft: false
 slug: 'estimation-accuracy'
-category: 'Software Development'
+category: 'Process Improvement'
 tags:
   - 'Estimation'
   - 'Process'
   - 'Software Development'
 description: 'High quality developers will continuously operate in an environment of high uncertainty, which by definition is an environment in which it is extremely difficult to provide an estimated time to completion with any degree of certainty.'
 socialImage: '/media/software-development-media.jpg'
+author: cjnygard
 ---
 
 # Estimation Accuracy in Software Engineering

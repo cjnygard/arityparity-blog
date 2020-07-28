@@ -40,6 +40,28 @@ export const query = graphql`
         tags
         title
         socialImage
+        author {
+          bio
+          name
+          photo
+          contacts {
+            email
+            facebook
+            telegram
+            twitter
+            github
+            rss
+            vkontakte
+            linkedin
+            instagram
+            line
+            gitlab
+            weibo
+            codepen
+            youtube
+            soundcloud
+          }
+        }
       }
     }
   }

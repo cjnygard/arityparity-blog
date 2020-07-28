@@ -10,8 +10,10 @@ type Props = {
   }[]
 };
 
+
 const Menu = ({ menu }: Props) => (
-  <nav className={styles['menu']}>
+  <div className={styles['menu']}>
+    <h3>Links</h3>
     <ul className={styles['menu__list']}>
       {menu.map((item) => (
         <li className={styles['menu__list-item']} key={item.path}>
@@ -25,7 +27,6 @@ const Menu = ({ menu }: Props) => (
         </li>
       ))}
     </ul>
-  </nav>
+  </div>
 );
-
 export default Menu;

@@ -1,0 +1,40 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.author {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__headshot {
+    &_photo {
+      display: inline-block;
+      margin-bottom: 0;
+      border-radius: 50%;
+      background-clip: padding-box;
+    }
+  }
+
+  &__name {
+    padding: 20px 0px 0px 8px;
+
+    &-link {
+      font-size: $typographic-base-font-size;
+      color: $typographic-base-font-color;
+      font-weight: normal;
+      border: 0;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+      }
+
+      &--active {
+        color: $color-base;
+        border-bottom: 1px solid $color-base;
+      }
+    }
+  }
+}

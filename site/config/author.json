@@ -1,0 +1,50 @@
+{
+  "authors": [
+    {
+      "id": "cjnygard",
+      "name": "Carl Nygard",
+      "bio": "I'm Arity",
+      "photo": "./content/media/carl-photo.jpg",
+      "contacts": {
+        "email": "",
+        "facebook": "#",
+        "telegram": "#",
+        "twitter": "#",
+        "github": "#",
+        "rss": "",
+        "vkontakte": "",
+        "linkedin": "#",
+        "instagram": "#",
+        "line": "",
+        "gitlab": "",
+        "weibo": "",
+        "codepen": "",
+        "youtube": "",
+        "soundcloud": ""
+      }
+    },
+    {
+      "id": "djktno",
+      "name": "Dan Kunnath",
+      "bio": "I'm Parity",
+      "photo": "./content/media/dan-photo.jpg",
+      "contacts": {
+        "email": "",
+        "facebook": "#",
+        "telegram": "#",
+        "twitter": "#",
+        "github": "#",
+        "rss": "",
+        "vkontakte": "",
+        "linkedin": "#",
+        "instagram": "#",
+        "line": "",
+        "gitlab": "",
+        "weibo": "",
+        "codepen": "",
+        "youtube": "",
+        "soundcloud": ""
+      }
+    }
+  ]
+}

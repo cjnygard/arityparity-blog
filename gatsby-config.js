@@ -14,7 +14,18 @@ module.exports = {
     menu: siteConfig.menu,
     author: siteConfig.author
   },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': `AuthorYaml`,
+  },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        //isTSX: true, // defaults to false
+        //jsxPragma: `jsx`, // defaults to "React"
+        //allExtensions: true, // defaults to false
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
@@ -247,6 +258,14 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs'
+    'gatsby-plugin-optimize-svgs',
+    `gatsby-transformer-yaml`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/site/config`,
+        name: 'config'
+      }
+    }
   ]
 };

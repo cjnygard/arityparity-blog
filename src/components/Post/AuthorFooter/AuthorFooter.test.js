@@ -2,11 +2,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
-import Author from './Author';
+import AuthorFooter from './AuthorFooter';
 import siteMetadata from '../../../../jest/__fixtures__/site-metadata';
 import type { RenderCallback } from '../../../types';
 
-describe('Author', () => {
+describe('AuthorFooter', () => {
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
@@ -17,7 +17,7 @@ describe('Author', () => {
   });
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Author />).toJSON();
+    const tree = renderer.create(<AuthorFooter />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
