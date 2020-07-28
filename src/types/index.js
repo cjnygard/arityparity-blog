@@ -46,6 +46,20 @@ export type Edge = {
 
 export type Edges = Array<Edge>;
 
+export type Category = {
+  fieldValue: string,
+  totalCount: number
+}
+
+export type Categories = Array<Category>;
+
+export type Tag = {
+  fieldValue: string,
+  totalCount: number
+}
+
+export type Tags = Array<Tag>;
+
 export type AllMarkdownRemark = {
   allMarkdownRemark: {
     edges: Edges,

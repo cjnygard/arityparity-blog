@@ -14,36 +14,52 @@ module.exports = {
     {
       label: 'Articles',
       path: '/'
-    },
-    {
-      label: 'About me',
-      path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
     }
   ],
-  author: {
-    name: 'Carl Nygard',
-    photo: '/carl-photo.jpg',
-    bio: 'CSG',
-    contacts: {
-      email: '',
-      facebook: '',
-      telegram: '',
-      twitter: '',
-      github: 'cjnygard',
-      rss: '',
-      vkontakte: '',
-      linkedin: 'carl-nygard',
-      instagram: '',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: ''
+  author: [
+    {
+      name: 'Carl Nygard',
+      photo: '/carl-photo.jpg',
+      bio: '/about-cnygard',
+      contacts: {
+        email: '',
+        facebook: '',
+        telegram: '',
+        twitter: '',
+        github: 'cjnygard',
+        rss: '',
+        vkontakte: '',
+        linkedin: 'carl-nygard',
+        instagram: '',
+        line: '',
+        gitlab: '',
+        weibo: '',
+        codepen: '',
+        youtube: '',
+        soundcloud: ''
+      }
+    },
+    {
+      name: 'Dan Kunnath',
+      photo: '/dan-photo.png',
+      bio: '/about-dkunnath',
+      contacts: {
+        email: '',
+        facebook: '',
+        telegram: '',
+        twitter: '',
+        github: 'djktno',
+        rss: '',
+        vkontakte: '',
+        linkedin: 'djktno',
+        instagram: '',
+        line: '',
+        gitlab: '',
+        weibo: '',
+        codepen: '',
+        youtube: '',
+        soundcloud: ''
+      }
     }
-  }
+  ]
 };
