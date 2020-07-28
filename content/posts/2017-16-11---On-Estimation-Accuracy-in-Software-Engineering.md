@@ -14,8 +14,6 @@ socialImage: '/media/software-development-media.jpg'
 author: cjnygard
 ---
 
-# Estimation Accuracy in Software Engineering
-
 #### or... How to Advance Your Career by Creating Your Own Redundancy
 
 Are you responsible for ensuring that software projects are completed on time, on budget, and meet all specifications?
