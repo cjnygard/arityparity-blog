@@ -24,7 +24,30 @@ describe('Feed', () => {
               'test-1',
               'test-2'
             ],
-            title: 'test_0'
+            title: 'test_0',
+            author: {
+              id: 'foobar',
+              name: 'test',
+              photo: '/foobar-photo-social.jpg',
+              bio: 'test',
+              contacts: {
+                email: 'foobar',
+                facebook: 'foobar',
+                telegram: 'foobar',
+                twitter: 'foobar',
+                github: 'foobar',
+                rss: 'foobar',
+                vkontakte: 'foobar',
+                linkedin: 'foobar',
+                instagram: 'foobar',
+                line: 'foobar',
+                gitlab: 'foobar',
+                weibo: 'foobar',
+                codepen: 'foobar',
+                youtube: 'foobar',
+                soundcloud: 'foobar'
+              }
+            }
           },
           id: 'test-123',
           html: '<p>test</p>'
@@ -49,7 +72,30 @@ describe('Feed', () => {
               'test-1',
               'test-2'
             ],
-            title: 'test_1'
+            title: 'test_1',
+            author: {
+              id: 'foobar',
+              name: 'test',
+              photo: '/foobar-photo-social.jpg',
+              bio: 'test',
+              contacts: {
+                email: 'foobar',
+                facebook: 'foobar',
+                telegram: 'foobar',
+                twitter: 'foobar',
+                github: 'foobar',
+                rss: 'foobar',
+                vkontakte: 'foobar',
+                linkedin: 'foobar',
+                instagram: 'foobar',
+                line: 'foobar',
+                gitlab: 'foobar',
+                weibo: 'foobar',
+                codepen: 'foobar',
+                youtube: 'foobar',
+                soundcloud: 'foobar'
+              }
+            }
           },
           id: 'test-321',
           html: '<p>test</p>'

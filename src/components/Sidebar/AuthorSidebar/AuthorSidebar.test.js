@@ -5,11 +5,13 @@ import AuthorSidebar from './AuthorSidebar';
 
 describe('AuthorSidebar', () => {
   const props = {
-    author: {
-      name: 'test',
-      photo: '/carl-photo-social.jpg',
-      bio: 'test'
-    },
+    authors: [
+      {
+        name: 'test',
+        photo: '/carl-photo-social.jpg',
+        bio: 'test'
+      }
+    ],
     isIndex: false
   };
 

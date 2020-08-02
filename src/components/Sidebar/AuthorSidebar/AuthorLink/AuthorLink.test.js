@@ -1,9 +1,9 @@
 // @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Author from './Author';
+import AuthorLink from './AuthorLink';
 
-describe('Author', () => {
+describe('AuthorLink', () => {
   const props = {
     author: {
       name: 'test',
@@ -14,7 +14,7 @@ describe('Author', () => {
   };
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Author {...props} />).toJSON();
+    const tree = renderer.create(<AuthorLink {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

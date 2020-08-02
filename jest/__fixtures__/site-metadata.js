@@ -1,5 +1,8 @@
 'use strict';
 
+import { categories } from './site-categories';
+import { tags } from './site-tags';
+
 module.exports = {
   site: {
     siteMetadata: {
@@ -23,19 +26,23 @@ module.exports = {
           path: '/test/3/'
         }
       ],
-      author: {
-        name: 'Test name',
-        photo: '/test.jpg',
-        bio: 'Test bio',
-        contacts: {
-          email: '#',
-          telegram: '#',
-          twitter: '#',
-          github: '#',
-          rss: '#',
-          vkontakte: '#'
+      author: [
+        {
+          name: 'Test name',
+          photo: '/test.jpg',
+          bio: 'Test bio',
+          contacts: {
+            email: '#',
+            telegram: '#',
+            twitter: '#',
+            github: '#',
+            rss: '#',
+            vkontakte: '#'
+          }
         }
-      }
-    }
-  }
+      ]
+    },
+  },
+  categories: { group: categories },
+  tags: { group: tags }
 };

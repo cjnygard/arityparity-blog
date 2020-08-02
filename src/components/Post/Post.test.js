@@ -34,7 +34,30 @@ describe('Post', () => {
           'test_0',
           'test_1'
         ],
-        title: 'test'
+        title: 'test',
+        author: {
+          id: 'foobar',
+          name: 'test',
+          photo: '/foobar-photo-social.jpg',
+          bio: 'test',
+          contacts: {
+            email: 'foobar',
+            facebook: 'foobar',
+            telegram: 'foobar',
+            twitter: 'foobar',
+            github: 'foobar',
+            rss: 'foobar',
+            vkontakte: 'foobar',
+            linkedin: 'foobar',
+            instagram: 'foobar',
+            line: 'foobar',
+            gitlab: 'foobar',
+            weibo: 'foobar',
+            codepen: 'foobar',
+            youtube: 'foobar',
+            soundcloud: 'foobar'
+          }
+        }
       }
     }
   };

@@ -1,9 +1,7 @@
 // @flow strict
 import React from 'react';
-import { withPrefix, Link } from 'gatsby';
 import styles from './AuthorSidebar.module.scss';
-import Author from './Author';
-import Contacts from './Contacts';
+import AuthorLink from './AuthorLink';
 
 type Props = {
   authors: {
@@ -20,7 +18,7 @@ const AuthorSidebar = ({ authors, isIndex }: Props) => (
     <ul className={styles['authorsidebar__list']}>
       {authors.map((author) => (
         <li className={styles['authorsidebar__list-item']} key={author.name}>
-          <Author author={author} isIndex={isIndex} />
+          <AuthorLink author={author} isIndex={isIndex} />
         </li>
       ))}
     </ul>

@@ -10,7 +10,6 @@ type Props = {
   }[]
 };
 
-
 const Menu = ({ menu }: Props) => (
   <div className={styles['menu']}>
     <h3>Links</h3>

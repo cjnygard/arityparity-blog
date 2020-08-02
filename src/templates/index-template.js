@@ -15,7 +15,12 @@ type Props = {
 };
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle,
+    categories,
+    tags
+  } = useSiteMetadata();
 
   const {
     currentPage,
@@ -30,7 +35,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <Sidebar isIndex />
+      <Sidebar isIndex categories={categories} tags={tags} />
       <Page>
         <Feed edges={edges} />
         <Pagination

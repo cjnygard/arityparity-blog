@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu renders correctly 1`] = `
-<nav
+<div
   className="menu"
 >
+  <h3>
+    Links
+  </h3>
   <ul
     className="menu__list"
   >
@@ -28,5 +31,5 @@ exports[`Menu renders correctly 1`] = `
       </a>
     </li>
   </ul>
-</nav>
+</div>
 `;
