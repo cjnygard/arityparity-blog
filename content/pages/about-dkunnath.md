@@ -4,7 +4,7 @@ template: 'page'
 socialImage: '/media/software-development-media.png'
 ---
 
-### Sr. Director, Enterprise Architecture @Cengage Learnning
+### Sr. Director, Enterprise Architecture @Cengage Learning
 
 Search | Naming | Counting
 
