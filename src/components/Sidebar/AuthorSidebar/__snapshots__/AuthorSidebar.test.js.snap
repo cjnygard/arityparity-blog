@@ -4,31 +4,46 @@ exports[`AuthorSidebar renders correctly 1`] = `
 <div
   className="authorsidebar"
 >
-  <a
-    href="/"
+  <h3>
+    Authors
+  </h3>
+  <ul
+    className="authorsidebar__list"
   >
-    <img
-      alt="test"
-      className="author__photo"
-      height="75"
-      src="/carl-photo-social.jpg"
-      width="75"
-    />
-  </a>
-  <h2
-    className="author__title"
-  >
-    <a
-      className="author__title-link"
-      href="/"
+    <li
+      className="authorsidebar__list-item"
     >
-      test
-    </a>
-  </h2>
-  <p
-    className="author__subtitle"
-  >
-    test
-  </p>
+      <ul
+        className="author"
+      >
+        <li>
+          <div
+            className="author__headshot"
+          >
+            <img
+              alt="test"
+              className="author__headshot_photo"
+              height="75"
+              src="/carl-photo-social.jpg"
+              width="75"
+            />
+          </div>
+        </li>
+        <li>
+          <div
+            className="author__name"
+            height="75"
+          >
+            <a
+              className="author__name-link"
+              href="/pages/test/"
+            >
+              test
+            </a>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </div>
 `;

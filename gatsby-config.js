@@ -15,15 +15,15 @@ module.exports = {
     author: siteConfig.author
   },
   mapping: {
-    'MarkdownRemark.frontmatter.author': `AuthorYaml`,
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: 'gatsby-plugin-typescript',
       options: {
-        //isTSX: true, // defaults to false
-        //jsxPragma: `jsx`, // defaults to "React"
-        //allExtensions: true, // defaults to false
+        // isTSX: true, // defaults to false
+        // jsxPragma: 'jsx', // defaults to "React"
+        // allExtensions: true, // defaults to false
       },
     },
     {
@@ -259,7 +259,7 @@ module.exports = {
     },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
-    `gatsby-transformer-yaml`,
+    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -1,8 +1,6 @@
 // @flow strict
 import React from 'react';
-import { getContactHref } from '../../../utils';
 import styles from './AuthorFooter.module.scss';
-import { useSiteMetadata } from '../../../hooks';
 import Author from './Author';
 import Contacts from './Contacts';
 
@@ -10,23 +8,22 @@ type Props = {
   author: {
     name: string,
     bio: string,
-    photo: string
+    photo: string,
+    contacts: {
+      [string]: string,
+    },
   }
 };
 
-
-const AuthorFooter = ({ author }: Props) => {
-
-  return (
-    <div className={styles['authorfooter']}>
-      <div className={styles['authorfooter__author']}>
-        <Author author={author} isIndex={false} />
-      </div>
-      <div className={styles['authorfooter__contact']}>
-        <Contacts contacts={author.contacts} />
-      </div>
+const AuthorFooter = ({ author }: Props) => (
+  <div className={styles['authorfooter']}>
+    <div className={styles['authorfooter__author']}>
+      <Author author={author} isIndex={false} />
     </div>
-  );
-};
+    <div className={styles['authorfooter__contact']}>
+      <Contacts contacts={author.contacts} />
+    </div>
+  </div>
+);
 
 export default AuthorFooter;

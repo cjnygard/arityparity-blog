@@ -2,7 +2,7 @@
 import React from 'react';
 import kebabCase from 'lodash/kebabCase';
 import { Link } from 'gatsby';
-import type { Categories } from '../../../../types';
+import type { Categories } from '../../../types';
 import styles from './FeedCategories.module.scss';
 
 type Props = {

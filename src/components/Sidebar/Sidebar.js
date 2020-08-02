@@ -6,17 +6,17 @@ import FeedTags from './FeedTags';
 import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
-import { useSiteMetadata, useCategoriesList, useTagsList } from '../../hooks';
+import { useSiteMetadata } from '../../hooks';
+import type { Tag } from '../../types';
 
 type Props = {
+  categories: Tag[],
+  tags: Tag[],
   isIndex?: boolean
 };
 
-const Sidebar = ({ isIndex }: Props) => {
+const Sidebar = ({ categories, tags, isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
-  const categories = useCategoriesList();
-  const tags = useTagsList();
-
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
@@ -24,7 +24,7 @@ const Sidebar = ({ isIndex }: Props) => {
         <Menu menu={menu} />
         <FeedCategories categories={categories} />
         <FeedTags tags={tags} />
-        <AuthorSidebar authors={author} />
+        <AuthorSidebar isIndex={isIndex} authors={author} />
         <Copyright copyright={copyright} />
       </div>
     </div>

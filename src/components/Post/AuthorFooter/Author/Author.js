@@ -1,19 +1,18 @@
 // @flow strict
 import React from 'react';
 import { withPrefix, Link } from 'gatsby';
-import styles from './Author.module.scss';
 import kebabCase from 'lodash/kebabCase';
+import styles from './Author.module.scss';
 
 type Props = {
   author: {
     name: string,
     bio: string,
     photo: string
-  },
-  isIndex: ?boolean
+  }
 };
 
-const Author = ({ author, isIndex }: Props) => (
+const Author = ({ author }: Props) => (
   <ul className={styles['author']}>
     <li>
       <div className={styles['author__headshot']}>

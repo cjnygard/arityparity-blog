@@ -22,6 +22,10 @@ export type PageContext = {
   hasNextPage: boolean
 };
 
+export type SocialMediaContacts = {
+  [string]: string,
+}
+
 export type Node = {
   fields: {
     slug: string,
@@ -34,7 +38,14 @@ export type Node = {
     category?: string,
     tags?: string[],
     title: string,
-    socialImage?: string
+    socialImage?: string,
+    author: {
+      id: string,
+      name: string,
+      bio: string,
+      photo: string,
+      contacts: SocialMediaContacts
+    }
   },
   html: string,
   id: string

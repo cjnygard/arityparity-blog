@@ -7,12 +7,14 @@ describe('FeedTags', () => {
   const props = {
     tags: [
       {
-        name: 'test_0',
-        slug: '/test_0'
+        fieldValue: 'test_0',
+        slug: '/test_0',
+        totalCount: 2
       },
       {
-        name: 'test_1',
-        slug: '/test_1'
+        fieldValue: 'test_1',
+        slug: '/test_1',
+        totalCount: 2
       }
     ]
   };

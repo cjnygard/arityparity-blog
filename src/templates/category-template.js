@@ -15,7 +15,12 @@ type Props = {
 };
 
 const CategoryTemplate = ({ data, pageContext }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle,
+    categories,
+    tags
+  } = useSiteMetadata();
 
   const {
     category,
@@ -31,7 +36,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <Sidebar />
+      <Sidebar isIndex={false} categories={categories} tags={tags} />
       <Page title={category}>
         <Feed edges={edges} />
         <Pagination

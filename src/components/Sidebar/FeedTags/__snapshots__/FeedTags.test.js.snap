@@ -1,104 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FeedCategories renders correctly 1`] = `
+exports[`FeedTags renders correctly 1`] = `
 <div
-  className="feed"
+  className="feedtags"
 >
-  <div
-    className="feed__item"
+  <h3>
+    Tags
+  </h3>
+  <ul
+    className="feedtags__list"
   >
-    <div
-      className="feed__item-meta"
-    >
-      <time
-        className="feed__item-meta-time"
-        dateTime="September 1, 2016"
-      >
-        September 2016
-      </time>
-      <span
-        className="feed__item-meta-divider"
-      />
-      <span
-        className="feed__item-meta-category"
-      >
-        <a
-          className="feed__item-meta-category-link"
-          href="/test_0"
-        >
-          test_0
-        </a>
-      </span>
-    </div>
-    <h2
-      className="feed__item-title"
+    <li
+      className="feedtags__list-item"
     >
       <a
-        className="feed__item-title-link"
-        href="/test_0"
+        className="feedtags__list-item-link"
+        href="/tag/test-0/"
       >
         test_0
+         (
+        2
+        )
       </a>
-    </h2>
-    <p
-      className="feed__item-description"
-    >
-      test_0
-    </p>
-    <a
-      className="feed__item-readmore"
-      href="/test_0"
-    >
-      Read
-    </a>
-  </div>
-  <div
-    className="feed__item"
-  >
-    <div
-      className="feed__item-meta"
-    >
-      <time
-        className="feed__item-meta-time"
-        dateTime="September 1, 2016"
-      >
-        September 2016
-      </time>
-      <span
-        className="feed__item-meta-divider"
-      />
-      <span
-        className="feed__item-meta-category"
-      >
-        <a
-          className="feed__item-meta-category-link"
-          href="/test_1"
-        >
-          test_1
-        </a>
-      </span>
-    </div>
-    <h2
-      className="feed__item-title"
+    </li>
+    <li
+      className="feedtags__list-item"
     >
       <a
-        className="feed__item-title-link"
-        href="/test_1"
+        className="feedtags__list-item-link"
+        href="/tag/test-1/"
       >
         test_1
+         (
+        2
+        )
       </a>
-    </h2>
-    <p
-      className="feed__item-description"
-    >
-      test_1
-    </p>
-    <a
-      className="feed__item-readmore"
-      href="/test_1"
-    >
-      Read
-    </a>
-  </div>
+    </li>
+  </ul>
 </div>
 `;
