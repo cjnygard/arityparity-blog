@@ -257,6 +257,14 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-numbered-footnotes',
+        ],
+      }
+    },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
     'gatsby-transformer-yaml',
