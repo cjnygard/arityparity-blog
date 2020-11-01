@@ -41,7 +41,7 @@ module.exports = {
     },
     {
       name: 'Dan Kunnath',
-      photo: '/dan-photo.png',
+      photo: '/dk-photo.jpg',
       bio: '/about-dkunnath',
       contacts: {
         email: '',
