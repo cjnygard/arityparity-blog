@@ -40,7 +40,7 @@ module.exports = {
       }
     },
     {
-      name: 'Dan Kunnath',
+      name: 'Daniel Kunnath',
       photo: '/dk-photo.jpg',
       bio: '/about-dkunnath',
       contacts: {
@@ -51,7 +51,7 @@ module.exports = {
         github: 'djktno',
         rss: '',
         vkontakte: '',
-        linkedin: 'djktno',
+        linkedin: 'danielkunnath',
         instagram: '',
         line: '',
         gitlab: '',
